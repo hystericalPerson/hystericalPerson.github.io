@@ -8,13 +8,25 @@
       <link href="/2021/12/10/antv-x6-vue3/"/>
       <url>/2021/12/10/antv-x6-vue3/</url>
       
-        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近需要一款自定义流程图编辑器。经过预研后选用X6 + vue3 去实现。<br><img src="/images/img1.png" alt="asdasdasd"></p><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><h4 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h4><p><a href="https://github.com/hystericalPerson/vue3-x6-editor-demo">项目地址</a></p><h4 id="功能点"><a href="#功能点" class="headerlink" title="功能点"></a>功能点</h4><ol><li>左侧组件<ul><li>基本组件</li><li>流程库</li><li>节点库</li></ul></li><li>中间展示部分</li><li>右侧关于节点的描述（双向绑定<code>node-data</code>中的数据）</li></ol><h4 id="设计思路"><a href="#设计思路" class="headerlink" title="设计思路"></a>设计思路</h4>]]></content>
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一个自定义流程图编辑器，antv-X6 + vue3 实现。<br><img src="/images/img1.png" alt="demo页面"></p><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><h4 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h4><p><a href="https://github.com/hystericalPerson/vue3-x6-editor-demo">项目地址</a><br><a href="https://github.com/hystericalPerson/vue3-x6-editor-demo">https://github.com/hystericalPerson/vue3-x6-editor-demo</a></p><h4 id="功能点"><a href="#功能点" class="headerlink" title="功能点"></a>功能点</h4><ol><li>左侧组件<ul><li>基本组件</li><li>流程库</li><li>节点库</li></ul></li><li>中间展示部分</li><li>右侧关于节点的描述（双向绑定<code>node-data</code>中的数据）</li></ol><h4 id="设计思路"><a href="#设计思路" class="headerlink" title="设计思路"></a>设计思路</h4><p>按照页面布局，简单的划分3个组件。<code>graph</code>,<code>nodeDesc</code>,<code>dnd</code></p><h5 id="graph"><a href="#graph" class="headerlink" title="graph"></a>graph</h5><ol><li>创建组件<code>graph</code>,并将其配置化代码存入<code>config.js</code><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">editor.graph = new Graph(&#123;</span><br><span class="line">    ...createDefaultSetting(props.graphId, `$&#123;props.graphId&#125;map`)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">createDefaultSetting为配置化文件的引入</span><br></pre></td></tr></table></figure></li><li>绑定需要的画布事件函数<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// 绑定画布的键盘事件</span><br><span class="line">const bindKey = () =&gt; &#123;</span><br><span class="line">    bindKeyCopy()</span><br><span class="line">    bindKeyPaste()</span><br><span class="line">    bindKeyShear()</span><br><span class="line">    bindKeyUndo()</span><br><span class="line">    bindKeyRedo()</span><br><span class="line">    bindKeySelectAll()</span><br><span class="line">    bindKeyDel()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol><h5 id=""><a href="#" class="headerlink" title=""></a></h5>]]></content>
       
+      
+      <categories>
+          
+          <category> demo </category>
+          
+          <category> 流程图编辑器 </category>
+          
+          <category> vue3 </category>
+          
+      </categories>
       
       
         <tags>
             
-            <tag> X6,vue3 </tag>
+            <tag> X6 </tag>
+            
+            <tag> vue3 </tag>
             
         </tags>
       
