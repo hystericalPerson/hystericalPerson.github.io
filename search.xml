@@ -15,6 +15,25 @@
     </entry>
     
     
+    
+    <entry>
+      <title>antv x6+vue3 demo</title>
+      <link href="/2021/12/10/antv-x6-vue3/"/>
+      <url>/2021/12/10/antv-x6-vue3/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近需要一款自定义流程图编辑器。经过预研后选用X6 + vue3 去实现。<br><img src="/images/img1.png" alt="asdasdasd"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> X6,vue3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
   
   
 </search>
