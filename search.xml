@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>【笔记】项目换肤</title>
+      <link href="/2021/12/22/%E9%A1%B9%E7%9B%AE%E6%8D%A2%E8%82%A4/"/>
+      <url>/2021/12/22/%E9%A1%B9%E7%9B%AE%E6%8D%A2%E8%82%A4/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近项目需要一个一键换肤的功能</p><h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><h4 id="UI框架部分"><a href="#UI框架部分" class="headerlink" title="UI框架部分"></a>UI框架部分</h4><p><a href="https://blog.csdn.net/weixin_43225598/article/details/108392687">https://blog.csdn.net/weixin_43225598/article/details/108392687</a><br>采用以上链接的方式。<br>大体上为安装ui框架的换肤组件进行处理，如antd-theme-generator</p><h4 id="自定义样式"><a href="#自定义样式" class="headerlink" title="自定义样式"></a>自定义样式</h4><ol><li>在public文件夹中新建less文件并在html中link引入该文件</li><li>在文件中定义样式类，在需要的地方使用该类</li><li>使用<code>less.modifyVars</code>方法调用</li></ol><p><strong>Tip</strong>: </p><ol><li>可将默认定义主题的各个样式放入js中来进行配置，在app中初始化主题</li><li>如果发现项目运行报错，修改<code>vue.config.js</code>中的<code>javascriptEnabled：true</code></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【可视化】搜索组件（1）</title>
       <link href="/2021/12/20/%E6%90%9C%E7%B4%A2%E5%8F%AF%E8%A7%86%E5%8C%96%EF%BC%881%EF%BC%89/"/>
       <url>/2021/12/20/%E6%90%9C%E7%B4%A2%E5%8F%AF%E8%A7%86%E5%8C%96%EF%BC%881%EF%BC%89/</url>
